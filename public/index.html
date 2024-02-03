@@ -176,5 +176,25 @@
     <footer>
       <p>&copy; Erik Kralj, s.p. 2024</p>
     </footer>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+      import {
+        getAnalytics,
+        logEvent,
+      } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyB8VkOBY90XkpcJSubLlQaY3jqslgyHNc4",
+        authDomain: "kralj-info.firebaseapp.com",
+        projectId: "kralj-info",
+        storageBucket: "kralj-info.appspot.com",
+        messagingSenderId: "929150082850",
+        appId: "1:929150082850:web:a6cb244ef5a70e6980cf7b",
+        measurementId: "G-SKJL2QEF4D",
+      };
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      logEvent(analytics, "init");
+    </script>
   </body>
 </html>
