@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+    <title>kralj.info</title>
+    <meta property="og:title" content="kralj.info" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kralj.info" />
+    <meta
+      property="og:image"
+      content="https://kralj.info/assets/images/profile_picture.png"
+    />
+    <meta name="author" content="Erik Kralj" />
+    <meta name="description" content="Erik Kralj's portfolio page" />
+    <meta
+      name="keywords"
+      content="software engineer,programmer,freelance,developer,erik kralj,full-stack developer,frontend developer,backend developer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      :root {
+        --background-color: #f1f2f4;
+        --color: #194335;
+        --footer-color: #606773;
+        --link-color: #3979ec;
+        --ring-shadow: 0 0 #0000;
+        --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        color-scheme: light dark;
+      }
+
+      @font-face {
+        font-family: "Roboto";
+        src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      * {
+        box-sizing: border-box;
+        word-break: break-word;
+      }
+
+      body {
+        font: normal 16px Roboto;
+        background-color: var(--background-color);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        padding: 0 15px;
+      }
+
+      h1 {
+        font-weight: bold;
+      }
+
+      h3 {
+        font-weight: normal;
+      }
+
+      main {
+        align-items: center;
+        color: var(--color);
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0%;
+        justify-content: center;
+        text-align: center;
+      }
+
+      img.profile-pic {
+        border-radius: 9999px;
+        box-shadow: var(--ring-shadow), var(--ring-shadow), var(--shadow);
+        height: auto;
+        max-width: 100%;
+        padding: 0.5rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      ul.inline li {
+        display: inline;
+        padding: 0 10px;
+      }
+
+      a {
+        color: var(--link-color);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      code {
+        background: #f1f2f4;
+        border: 1px solid #a9b1be;
+        padding: 5px;
+        font-size: 12px;
+      }
+
+      footer {
+        color: var(--footer-color);
+        font-size: 0.8rem;
+        padding: 10px;
+        text-align: center;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background-color: #282c34;
+          --color: #a9b1be;
+          --footer-color: #7f838d;
+          --link-color: #5694b7;
+          --ring-shadow: 0 0 #fff;
+          --shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.2),
+            0 2px 4px -1px rgba(255, 255, 255, 0.2);
+        }
+
+        code {
+          background: #222730;
+          border: 1px solid #595c64;
+        }
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/profile_picture.png"
+    />
+  </head>
+
+  <body>
+    <main>
+      <img
+        class="profile-pic"
+        src="assets/images/profile_picture.png"
+        alt="Profile Picture"
+        width="300"
+        height="300"
+      />
+      <h1>Erik Kralj</h1>
+      <h3>Freelance Full-Stack Software Developer / System Administrator</h3>
+      <ul class="inline">
+        <li>
+          <a href="https://www.linkedin.com/in/erik9u2">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://github.com/erik9u2">GitHub</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/erik9u2">Twitter</a>
+        </li>
+        <li>
+          <a href="mailto:erik@kralj.info">Email</a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/company/erik-kralj-sp">Company</a>
+        </li>
+      </ul>
+      <p>
+        <code title="ssh-keygen -lf ~/.ssh/id_ed25519.pub">
+          256 SHA256:vIWXSe/0e79xDVa+u37XNBV3FY3QHiIwjwnxl9g+IJw (ED25519)
+        </code>
+      </p>
+      <p>
+        <code title="ssh-keygen -lf ~/.ssh/id_rsa.pub">
+          4096 SHA256:bGQWTcEotUW6XM1/1jkm8E+87e6KG2NZiY3cqnPy/Kk (RSA)
+        </code>
+      </p>
+    </main>
+    <footer>
+      <p>&copy; Erik Kralj, s.p. 2024</p>
+    </footer>
+  </body>
+</html>

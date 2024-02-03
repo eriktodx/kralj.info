@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://kralj.info/sitemap.xml
