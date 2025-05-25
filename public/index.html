@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
-    <meta charset="utf-8" />
-    <title>kralj.info</title>
-    <meta property="og:title" content="kralj.info" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://kralj.info" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erik Kralj - Freelance Full-Stack Developer</title>
     <meta
-      property="og:image"
-      content="https://kralj.info/assets/images/profile_picture.png"
+      name="description"
+      content="Portfolio of Erik Kralj, a freelance full-stack software developer and system administrator specializing in web development and system solutions."
     />
-    <meta name="author" content="Erik Kralj" />
-    <meta name="description" content="Erik Kralj's portfolio page" />
     <meta
       name="keywords"
-      content="software engineer,programmer,freelance,developer,erik kralj,full-stack developer,frontend developer,backend developer"
+      content="Erik Kralj, freelance developer, full-stack developer, software engineer, system administrator, web developer, frontend developer, backend developer"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Erik Kralj" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Erik Kralj - Freelance Full-Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Erik Kralj, a freelance full-stack software developer and system administrator specializing in web development and system solutions."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kralj.info/" />
+    <meta
+      property="og:image"
+      content="https://kralj.info/assets/images/profile_picture.webp"
+    />
+    <meta property="og:image:alt" content="Erik Kralj Profile Picture" />
+    <meta property="og:site_name" content="Erik Kralj Portfolio" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@KraljErik" />
+    <meta
+      name="twitter:title"
+      content="Erik Kralj - Freelance Full-Stack Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Erik Kralj, a freelance full-stack software developer and system administrator."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kralj.info/assets/images/profile_picture.webp"
+    />
+    <link rel="canonical" href="https://kralj.info/" />
+    <link rel="icon" type="image/webp" href="assets/images/favicon.webp" />
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin />
     <style>
       :root {
         --background-color: #f1f2f4;
@@ -31,9 +63,10 @@
 
       @font-face {
         font-family: "Roboto";
-        src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+        src: url("assets/fonts/Roboto/Roboto-Regular.woff2") format("woff2");
         font-weight: normal;
         font-style: normal;
+        font-display: swap;
       }
 
       * {
@@ -42,21 +75,23 @@
       }
 
       body {
-        font: normal 16px Roboto;
+        font: normal 16px Roboto, sans-serif;
         background-color: var(--background-color);
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        min-height: 100vh;
         margin: 0;
         padding: 0 15px;
       }
 
       h1 {
         font-weight: bold;
+        margin: 0.5em 0;
       }
 
       h3 {
         font-weight: normal;
+        margin: 0.5em 0;
       }
 
       main {
@@ -64,14 +99,14 @@
         color: var(--color);
         display: flex;
         flex-direction: column;
-        flex: 1 1 0%;
+        flex: 1;
         justify-content: center;
         text-align: center;
       }
 
       img.profile-pic {
-        border-radius: 9999px;
-        box-shadow: var(--ring-shadow), var(--ring-shadow), var(--shadow);
+        border-radius: 50%;
+        box-shadow: var(--ring-shadow), var(--shadow);
         height: auto;
         max-width: 100%;
         padding: 0.5rem;
@@ -80,6 +115,7 @@
       ul {
         list-style: none;
         padding: 0;
+        margin: 1em 0;
       }
 
       ul.inline li {
@@ -101,6 +137,7 @@
         border: 1px solid #a9b1be;
         padding: 5px;
         font-size: 12px;
+        border-radius: 4px;
       }
 
       footer {
@@ -126,54 +163,70 @@
           border: 1px solid #595c64;
         }
       }
-    </style>
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="assets/images/profile_picture.png"
-    />
-  </head>
 
+      @media (max-width: 600px) {
+        ul.inline li {
+          display: block;
+          padding: 5px 0;
+        }
+      }
+    </style>
+  </head>
   <body>
-    <main>
+    <main id="main-content">
       <img
         class="profile-pic"
-        src="assets/images/profile_picture.png"
-        alt="Profile Picture"
+        src="assets/images/profile_picture.webp"
+        alt="Erik Kralj's profile picture"
         width="300"
         height="300"
+        loading="lazy"
       />
       <h1>Erik Kralj</h1>
-      <h3>Freelance Full-Stack Software Developer / System Administrator</h3>
-      <ul class="inline">
-        <li>
-          <a href="https://www.linkedin.com/in/kraljerik">LinkedIn</a>
-        </li>
-        <li>
-          <a href="https://github.com/eriktodx">GitHub</a>
-        </li>
-        <li>
-          <a href="https://x.com/KraljErik">Twitter</a>
-        </li>
-        <li>
-          <a href="mailto:erik@kralj.info">Email</a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/company/erik-kralj-sp">Company</a>
-        </li>
-        <li>
-          <a href="https://fakture.kralj.dev">eFakture</a>
-        </li>
-      </ul>
+      <h3>Freelance Full-Stack Software Developer & System Administrator</h3>
+      <nav aria-label="Social and contact links">
+        <ul class="inline">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/kraljerik"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/eriktodx" rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a href="https://x.com/KraljErik" rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li><a href="mailto:erik@kralj.info">Email</a></li>
+          <li>
+            <a
+              href="https://linkedin.com/company/erik-kralj-sp"
+              rel="noopener noreferrer"
+              >Company</a
+            >
+          </li>
+          <li>
+            <a href="https://fakture.kralj.dev" rel="noopener noreferrer"
+              >eFakture</a
+            >
+          </li>
+        </ul>
+      </nav>
       <p>
-        <a href="id_ed25519">
+        <a href="id_ed25519" aria-label="ED25519 SSH Public Key">
           <code title="ssh-keygen -lf ~/.ssh/id_ed25519.pub">
             256 SHA256:vIWXSe/0e79xDVa+u37XNBV3FY3QHiIwjwnxl9g+IJw (ED25519)
           </code>
         </a>
       </p>
       <p>
-        <a href="id_rsa">
+        <a href="id_rsa" aria-label="RSA SSH Public Key">
           <code title="ssh-keygen -lf ~/.ssh/id_rsa.pub">
             4096 SHA256:bGQWTcEotUW6XM1/1jkm8E+87e6KG2NZiY3cqnPy/Kk (RSA)
           </code>
@@ -181,15 +234,34 @@
       </p>
     </main>
     <footer>
-      <p>&copy; Erik Kralj, s.p. 2024</p>
+      <p>© Erik Kralj, s.p. 2025</p>
     </footer>
 
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Erik Kralj",
+        "jobTitle": "Freelance Full-Stack Software Developer & System Administrator",
+        "url": "https://kralj.info",
+        "sameAs": [
+          "https://www.linkedin.com/in/kraljerik",
+          "https://github.com/eriktodx",
+          "https://x.com/KraljErik",
+          "https://linkedin.com/company/erik-kralj-sp"
+        ],
+        "email": "mailto:erik@kralj.info",
+        "image": "https://kralj.info/assets/images/profile_picture.webp"
+      }
+    </script>
+
     <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
       import {
         getAnalytics,
         logEvent,
-      } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+      } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics.js";
+
       const firebaseConfig = {
         apiKey: "AIzaSyB8VkOBY90XkpcJSubLlQaY3jqslgyHNc4",
         authDomain: "kralj-info.firebaseapp.com",
@@ -199,9 +271,11 @@
         appId: "1:929150082850:web:a6cb244ef5a70e6980cf7b",
         measurementId: "G-SKJL2QEF4D",
       };
+
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
-      logEvent(analytics, "init");
+
+      logEvent(analytics, "page_view");
     </script>
   </body>
 </html>
